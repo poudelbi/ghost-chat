@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,33 +12,41 @@
         background-size: cover;
         background-position: center;
         font-family: 'Roboto', sans-serif;
+        height: 100vh; /* Set body height to 100% viewport height */
+        margin: 0; /* Remove margins for full-screen layout */
+        display: flex; /* Allow centering of content vertically */
+        align-items: center; /* Center content vertically */
+        justify-content: center; /* Center content horizontally */
       }
+
       .chat-container {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%; /* Set container width to 100% */
+        max-width: 400px; /* Set maximum container width */
+        text-align: center; /* Center chat content */
       }
+
       .iframe-container {
-        width: 90%;
-        max-width: 100%;
         border: 1px solid #ddd;
         border-radius: 5px;
+      }
+
+      .ghost-icon {
+        margin-bottom: 1rem; /* Add some space below the icon */
+        width: 100px; /* Set icon width */
+        height: 100px; /* Set icon height */
       }
     </style>
   </head>
   <body>
-    <div class="container chat-container">
+    <div class="chat-container">
+      <img src="https://www.freeiconspng.com/images/ghost-icon-png-1.png" alt="Ghost Chat Icon" class="ghost-icon">
       <h1>Ghost Chat</h1>
+      <p>Chat anonymously with people from all over the world.</p>
       <div class="iframe-container">
-        <iframe src="https://kiwiirc.hybridirc.com/#ghost-room,#chat-nepal" allow="camera; microphone; display-capture; fullscreen" style="border:0; width:100%; height:300px;"></iframe>
+        <iframe src="https://kiwiirc.hybridirc.com/#ghost-room,#chat-nepal" allow="camera; microphone; display-capture; fullscreen" style="border:0; width:100%; height: 100%;"></iframe>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
 
-This code effectively combines the best aspects of the previous responses, creating a visually appealing and mobile-friendly chat interface.
- * https://www.liip.ch/en/blog/svelte-typescript-tailwind-setup
- * https://github.com/FalkFranco/Frontend-ArgPrograma
